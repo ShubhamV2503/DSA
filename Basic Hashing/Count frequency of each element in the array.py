@@ -30,29 +30,3 @@
 
 
 
-hashmap = {}
-
-nums = [1,4,8,13]
-k = 5
-for i in range(len(nums)):
-    while (k > 0):
-        if nums[i] not in hashmap:
-            k  = k - 1
-            nums[i] = nums[i]  +1
-        else:
-            hashmap[nums[i]] = hashmap[nums[i]]  + 1
-
-print(hashmap)     
-
-# hashmap = {}
-# for i in range(len(nums)):
-#       while k > 0:
-#               if nums[i] not in hashmap:
-#                     k = k - 1
-#                     nums[i] = nums[i] + 1
-#                 else:
-#                     hashmap[nums[i]] = hashmap[nums[i]] + 1
-
-
-
-
