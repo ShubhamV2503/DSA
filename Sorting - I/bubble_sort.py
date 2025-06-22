@@ -1,5 +1,6 @@
 
-## TC: O(N*N) and SC: O(1)
+## TC: O(N*N) --> for worst case and SC: O(1)
+## TC: O(N)   -> for already sorted array i.e: Best case
 
 
 a = [13,46,24,52,20,9]
