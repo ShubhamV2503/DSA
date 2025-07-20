@@ -1,0 +1,62 @@
+
+1. Hashmap : 
+
+
+a =  [5,5,4,4,6,6,4,4]
+
+hashmap = {}
+
+for i in a:
+    if i not in hashmap:
+        hashmap[i]  = 1
+    else:
+        hashmap[i] = hashmap[i]  + 1
+
+
+data = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']
+
+freq = {}
+
+for item in data:
+    freq[item] = freq.get(item, 0) + 1
+
+# <------------------------------------------------------------------------------------------>
+
+2. XOR :
+
+
+XOR of two same binary number  1^1 = 0
+XOR of two different binary number 1^0 = 1
+
+XOR of two same number:  5^5 = binary of 5 is  : 101 so 101 ^ 101 = 0
+XOR of two different number:  5^4 = binary of 5 and 4 is  : 101 and  100 : == 101 ^ 100 = 001
+
+# <------------------------------------------------------------------------------------------>
+
+3. Moore’s Voting Algorithm
+
+Leetcode Problem number : 169 - Majority Elements
+
+# <------------------------------------------------------------------------------------------>
+
+4. Dutch National flag algorithm
+
+Leetcode Problem number : 75 -- Sort Colors
+
+# <------------------------------------------------------------------------------------------>
+
+5. Kadane's Algorithm
+
+Leetcode Problem number : 53 -- Maximum Subarray 
+
+
+# <------------------------------------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
