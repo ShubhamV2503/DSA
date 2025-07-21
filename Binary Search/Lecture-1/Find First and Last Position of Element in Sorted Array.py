@@ -27,9 +27,10 @@ a = [3,4,13,13,13,20,40 ]
 nums = [5,7,7,8,8,10]
 target = 11
 
+
 start = 0
-end = len(nums)
-res = len(nums)-1
+end = len(a)
+res = len(a)-1
 
 while start <= end:
     mid = (start+end) // 2
@@ -39,6 +40,20 @@ while start <= end:
     else:
         start = mid + 1
 print(res)
+
+
+# start = 0
+# end = len(a)
+# res = len(a)-1
+
+# while start <= end:
+#     mid = (start+end) // 2
+#     if a[mid] > x :
+#         res = mid
+#         end = mid - 1
+#     else:
+#         start = mid + 1
+# print(res)
 
 
 
