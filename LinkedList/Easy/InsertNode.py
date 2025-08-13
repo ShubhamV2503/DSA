@@ -1,58 +1,49 @@
 
-# class Node:
-#     def __init__(self, data):
-#         self.data = data
-#         from typing import Optional
-#         self.next: Optional[Node] = None  # nothing after it yet
-
-
-# class LinkedList:
-#     def __init__(self):
-#         self.head = None  # start is empty
-
-#     # Insert at the end
-#     def append(self, data):
-#         new_node = Node(data)
-#         if not self.head:
-#             self.head = new_node
-#             return
-#         current = self.head
-#         while current.next:
-#             current = current.next
-#         current.next = new_node
-
-#     # Print the list
-#     def display(self):
-#         current = self.head
-#         while current:
-#             print(current.data, end=" -> ")
-#             current = current.next
-#         print("None")
-
-# ll = LinkedList()
-# ll.append(10)
-# ll.append(20)
-# ll.append(30)
-
-# ll.display()
-
-
 ##--------------------------------------
 
 from typing import Optional
 class createnode:
     def __init__(self,data) -> None:
         self.data = data
-        # self.next : Optional[createnode] = None
-        self.next  = None
+        self.next : Optional[createnode] = None
+        # self.next  = None
 
 class linkedlist:
     def __init__(self) -> None:
         self.head = None
 
-    def insert(self,value):
+    def insert_at_head(self,value):
+        newnode = createnode(value)
+        if self.head is None:
+            self.head = newnode
+        newnode.next = self.head
+        self.head = newnode
+
+    def insert_at_position(self,value,pos):
         newnode = createnode(value)
 
+        if self.head is None and pos !=0:
+            print('Empty Linkedlist and Position Does not Exist')
+        elif pos == 0:
+            newnode.next = self.head
+            self.head = newnode
+            return
+
+        else:
+            count = 0
+            current = self.head
+            while current is not None and count < pos -1:
+                count = count + 1
+                current = current.next
+            
+            if current is None:
+                print('Position Out Of Bound')
+                return
+            # newnode.next = current.next
+            print(current , '--',current.data ,'--', current.next)
+
+    def insert_at_last(self,value):
+        newnode = createnode(value)
         if self.head is None:
             self.head = newnode
             return
@@ -61,7 +52,6 @@ class linkedlist:
         while current.next is not None:
             current = current.next
         current.next = newnode
-
 
     def display(self):
         current = self.head
@@ -72,10 +62,16 @@ class linkedlist:
 
 # Example usage
 ll = linkedlist()
-ll.insert(10)
-ll.insert(20)
-ll.insert(30)
-ll.insert(40)
+ll.insert_at_last(10)
+ll.insert_at_last(20)
+ll.insert_at_last(30)
+ll.insert_at_last(40)
+
+ll.insert_at_head(0)
+ll.insert_at_head(-1)
+
+ll.insert_at_position(100,2)
+
 ll.display()
 
 

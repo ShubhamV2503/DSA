@@ -1,26 +1,24 @@
 
 
+##LeetCode Problem: https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
+## leetcode Problem Number: 1752
+## Time Complexity: O(n)
+## Space Complexity: O(1)
 
-a = [3,4,5,1,2]
-smaller = float('inf')
-bool = False
+from typing import List
 
-for i in range(len(a)):
-    if a[i] < smaller:
-        smaller = a[i]
-        index = i
-print(index)
+class Solution:
+    def check(self, a: List[int]) -> bool:
 
-counter = index
-array = []
+        if a[len(a)-1] > a[0]:
+            count = 1
+        else:
+            count = 0
 
-while counter !=len(a):
-    for i in range(counter,len(a)):
-        array.append(a[i])
-        counter = counter + 1
-    print(array)
-
-
-
-
-
+        for i in range(len(a)-1):
+            if a[i] > a[i+1]:
+                count = count + 1
+            
+            if count > 1:
+                return False
+        return True
