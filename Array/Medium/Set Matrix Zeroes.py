@@ -63,20 +63,39 @@
 
 ##TC: O(2*(N*M))
 ##SC: O(1)
+from typing import List
 
-matrix = [[1,1,1,1],[1,0,1,1],[1,1,0,1],[0,1,1,1]]
+class Solution:
+    def setZeroes(self, matrix: List[List[int]]) -> None:
+        row  = len(matrix)
+        col  = len(matrix[0])
 
-row  =  len(matrix)
-col = len(matrix[0])
+        # Check if first column needs zeroing
+        extra_col = 1
+        for i in range(row):
+            if matrix[i][0] == 0:
+                extra_col = 0
+                break
 
-extra_col = 1
+        # Mark zeros in first row/col
+        for i in range(row):
+            for j in range(1, col):  # skip first col
+                if matrix[i][j] == 0:
+                    matrix[i][0] = 0
+                    matrix[0][j] = 0
 
-for i in range(row):
-    for j in range(col):
-        if matrix[i][j] == 0 and j!=0:
-            matrix[i][0] = 0
-            matrix[0][j] = 0
-print(matrix)
+        # Zero inner cells based on marks
+        for i in range(1, row):
+            for j in range(1, col):
+                if matrix[i][0] == 0 or matrix[0][j] == 0:
+                    matrix[i][j] = 0
 
+        # Handle first row
+        if matrix[0][0] == 0:
+            for j in range(col):
+                matrix[0][j] = 0
 
-
+        # Handle first column
+        if extra_col == 0:
+            for i in range(row):
+                matrix[i][0] = 0
