@@ -1,4 +1,20 @@
 
+A) Array
+B) LinkedList
+C) String
+D) Stack & Queues
+E) Two Pointer & Sliding Window
+D) Pre-Fix Sum
+
+Extra:--> 
+
+Sorting Algorithm ==> Bubble, insertion, merge, quick, selection
+Searching Algorithm ==> Binary Searching
+
+
+# <------------------------------------------------------------------------------------------>
+
+
 1. Hashmap : 
 
 

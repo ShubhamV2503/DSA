@@ -2,18 +2,41 @@
 
 n = 0
 
-i = 1
-count = 1
-
-while n - i > 0:
-    i = i * 10
-    count += 1
+if n == 0:
+    count = 1
+else:
+    i = 1
+    count = 0
+    while i <= n:
+        i *= 10
+        count += 1
 
 print("Number of digits in the number is:", count)
 
 
+
 # Time Complexity: O(log n)
 # Space Complexity : O(1)
+
+
+
+#-------------------------------------------------------------------------------#
+
+n = 0
+
+if n == 0:
+    count = 1
+else:
+    count = 0
+    while n > 0:
+        count += 1
+        n //= 10
+
+print("Number of digits in the number is:", count)
+
+# Time Complexity: O(log n)
+# Space Complexity : O(1)
+
 
 #-------------------------------------------------------------------------------#
 

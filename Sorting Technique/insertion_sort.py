@@ -7,7 +7,6 @@ counter = 0
 for i in range(len(a)):
 
     counter = i
-
     while counter != 0:
         if a[counter-1] > a[counter]:
             temp   = a[counter]

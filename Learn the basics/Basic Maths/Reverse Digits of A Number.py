@@ -1,5 +1,5 @@
-# This is LeetCode problem 7
-## Mine code
+# # This is LeetCode problem 7
+# ## Mine code
 
 class Solution(object):
     def reverse(self, x):
@@ -27,5 +27,26 @@ class Solution(object):
 # Time Complexity: O(Log n)
 # Space Complexity : O(1)                     
 #-------------------------------------------------------------------------------#
+
+
+
+
+
+
+
+
+# n = 1234500
+# res = 0
+# while n > 0:
+#     unit = n %10
+#     n = n // 10
+#     res = res * 10 + unit
+
+# print(res) 
+
+
+
+
+
 
 

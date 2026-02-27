@@ -65,3 +65,33 @@ class Solution:
 ## SC: O(1)
 
 ###-------------------------< > ###########################
+
+#Two pointer
+
+
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        if len(nums) > 1:
+
+            pointer = - 1
+            for k in range(len(nums)):
+                if nums[k] == 0:
+                    pointer = k
+                    break
+            if pointer == -1:
+                return
+            
+            for i in range(pointer+1,len(nums)):
+                if nums[i] !=0:
+                    temp = nums[i]
+                    nums[i] = nums[pointer]
+                    nums[pointer] = temp
+                    pointer = pointer + 1
+
+## TC: O(N)
+## SC: O(1)
+
+###-------------------------< > ###########################
