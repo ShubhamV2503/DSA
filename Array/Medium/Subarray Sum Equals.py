@@ -25,6 +25,10 @@
 a = [1,1,1]
 k = 2
 counter = 0
+hashmap = {}
+
+for i in a:
+    
 
 
 

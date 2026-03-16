@@ -26,14 +26,12 @@
 
 a = [10, 22, 12, 3, 0, 6]
 
+maxi = a[len(a)-1]
 res = []
-sum = a[len(a)-1]
-print(sum)
-for k in range(len(a)-1-1,-1,-1):
-    if a[k] > sum:
-        res.append(a[k])
-        sum = a[k]
+for i in range(len(a)-1,-1,-1):
+    if a[i] >= maxi:
+        res.append(a[i])
+        maxi = a[i]
 
-res.append(a[len(a)-1])
 print(res)
 
