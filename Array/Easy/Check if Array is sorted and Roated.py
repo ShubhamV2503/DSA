@@ -1,5 +1,4 @@
 
-
 ##LeetCode Problem: https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
 ## leetcode Problem Number: 1752
 ## Time Complexity: O(n)
