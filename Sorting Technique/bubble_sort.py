@@ -1,5 +1,5 @@
 
-## TC: O(N*N) --> for worst case and SC: O(1)
+### TC: O(N*N) --> for worst case and SC: O(1)
 ## TC: O(N)   -> for already sorted array i.e: Best case
 
 
