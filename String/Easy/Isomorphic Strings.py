@@ -1,7 +1,8 @@
 
-##LeetCode 205. Isomorphic Strings
+## LeetCode 205. Isomorphic Strings
 ##TC: O(n)
 ##SC: O(n)
+ ## Best Solution Optimized
 
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
