@@ -4,6 +4,7 @@
 
 ##Tc: O(n)
 ##Sc: O(1)
+## Optimzed Code
 
 string = "(1+(2*3)+((8)/4))+1"
 
