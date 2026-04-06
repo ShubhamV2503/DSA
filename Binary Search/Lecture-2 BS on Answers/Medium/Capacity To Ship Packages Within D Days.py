@@ -1,5 +1,5 @@
 
-## LeetCode Problem: https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
+# LeetCode Problem: https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
 ## Leetcode Problem Number: 1011
 ##TC: O(N * (sum(a[]) - max(a[]) + 1)) ~ O(N*N)
 ##SC: O(1)
