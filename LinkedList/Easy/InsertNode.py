@@ -1,5 +1,6 @@
 
 ##--------------------------------------
+## Easy Problem
 
 from typing import Optional
 class createnode:
