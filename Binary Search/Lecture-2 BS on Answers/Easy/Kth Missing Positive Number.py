@@ -1,6 +1,5 @@
 
 ## LeetCode Problem: https://leetcode.com/problems/kth-missing-positive-number/
-## Difficulty: Easy 
 ## Leetcode problem number: 1539
 
 ##TC: O(n)
