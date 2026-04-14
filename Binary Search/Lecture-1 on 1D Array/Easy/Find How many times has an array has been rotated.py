@@ -1,9 +1,10 @@
-
+## Optimzie code
 
 
 a = [4,5,6,7,0,1,2,3]
 
 start = 0
+s  = 1
 end = len(a)-1
 mini = float('inf')
 index = -1
