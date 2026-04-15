@@ -1,6 +1,5 @@
 
 ## Leetcode Problem: Sort Characters By Frequency
-## Leetcode problem number: 451
 
 ##TC: O(n log n) where n is the length of the string
 ##SC: O(n) for the hashmap
