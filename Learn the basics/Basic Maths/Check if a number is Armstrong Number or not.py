@@ -1,6 +1,5 @@
 ## It was available on Leetcode but its was paid
 
-## Mine code
 
 n = 153
 temp = n
