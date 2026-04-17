@@ -1,5 +1,5 @@
 ## Mine code
-
+## code to check if number is prime or not
 
 n = 11
 flag = 0
