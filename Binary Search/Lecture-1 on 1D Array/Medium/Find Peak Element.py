@@ -1,5 +1,4 @@
 
-## LeetCode 162: Find Peak Element
 ## leetcode https://leetcode.com/problems/find-peak-element/
 ## TC: O(n)
 ## SC: O(1)
