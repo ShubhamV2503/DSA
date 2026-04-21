@@ -1,8 +1,5 @@
 
 
-## LeetCode Problem: https://leetcode.com/problems/max-consecutive-ones/
-## Leetcode Problem Number: 485
-
 ## TC: O(n)
 ## SC: O(1)
 
