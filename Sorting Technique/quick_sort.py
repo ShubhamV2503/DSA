@@ -1,6 +1,5 @@
-## QUICK SORT
-# optimized code
-a = [4,1,7,9,3]
+
+a = [4,1,7,9,3,10,11]
 
 def sort(a,low,high):
 
