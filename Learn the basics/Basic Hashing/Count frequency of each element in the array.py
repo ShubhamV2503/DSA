@@ -13,7 +13,7 @@
 
 # ## TC = O(Log(N)) for Ordered Map and SC = O(N)
 
-a = [3, 1, 2, 3, 2]
+a = [3, 1, 2, 3, 2,1,12,13]
 
 map = {}
 
