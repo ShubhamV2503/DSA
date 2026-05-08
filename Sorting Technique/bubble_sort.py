@@ -3,7 +3,7 @@
 ## TC: O(N)   -> for already sorted array i.e: Best case
 
 
-a = [13,46,24,52,20,9]
+a = [13,46,24,52,20,9,10,11]
 # a = [1,2,3,4,5,6]  --> if already sorted, it will break early so TC will be O(N)
 
 
