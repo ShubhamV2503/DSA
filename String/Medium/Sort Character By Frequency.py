@@ -4,7 +4,7 @@
 ##TC: O(n log n) where n is the length of the string
 ##SC: O(n) for the hashmap
 
-s = "Aabb"
+s = "Aabbccd"
 hashmap = {}
 
 for ch in s:
