@@ -30,17 +30,17 @@
 ##TC: O(n)
 ##SC: O(1)
 
-# from typing import List
+from typing import List
 
-# class Solution:
-#     def findKthPositive(self, a: List[int], k: int) -> int:
+class Solution:
+    def findKthPositive(self, a: List[int], k: int) -> int:
 
-#         for i in range(len(a)):
-#             if a[i] <= k:
-#                 k = k +1
-#             else:
-#                 break
-#         return k
+        for i in range(len(a)):
+            if a[i] <= k:
+                k = k +1
+            else:
+                break
+        return k
 
 
 ##----------------------------------------------------------------------------
