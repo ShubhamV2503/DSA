@@ -1,4 +1,7 @@
 
+## STACK CODE
+
+
 class Stack:
     def __init__(self):
         self.top = -1
@@ -27,6 +30,8 @@ if __name__ == "__main__":
     s.push(7)
     s.push(10)
     s.push(11)
+    s.push(12)
+    s.push(14)
     print("Top of stack is before deleting any element", s.Top())
     print("Size of stack before deleting any element", s.Size())
     print("The element deleted is", s.pop())
